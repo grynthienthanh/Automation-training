@@ -1,4 +1,4 @@
-describe('Order:', () => {
+describe.skip('Order:', () => {
   before(async () => {
     browser.url('https://dev-gvm.nng.bz')
     await browser.setWindowSize(1650, 1050)

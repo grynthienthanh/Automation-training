@@ -1,4 +1,4 @@
-describe.skip('Login Flow:', () => {
+describe('Login Flow:', () => {
   before(async () => {
     browser.url('https://dev-gvm.nng.bz')
     await browser.setWindowSize(1650, 1050)
@@ -31,7 +31,7 @@ describe.skip('Login Flow:', () => {
     )
     await expect(nameAccount).toHaveTextContaining('jerry')
   })
-  it.only('Forgort Password', async () => {
+  it('Forgort Password', async () => {
     await browser.waitAndClick('//button[@class="btn-custom ng-star-inserted"]')
     await $('//a[contains(text(),"Quên mật khẩu?")]').waitForDisplayed()
     await browser.waitAndClick('//a[contains(text(),"Quên mật khẩu?")]')
